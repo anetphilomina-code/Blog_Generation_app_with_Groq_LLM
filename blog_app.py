@@ -28,7 +28,7 @@ if st.button("Generate Blog"):
     else:
         with st.spinner("Generating blog..."):
             response = client.chat.completions.create(
-                model="llama-3.1-8b-instant",  # You can also try "mixtral-8x7b"
+                model="llama-3.1-8b-instant",  
                 messages=[
                     {"role": "system", "content": "You are a creative blog writer."},
                     {"role": "user", "content": f"Write a detailed, engaging blog post about {topic}."},
